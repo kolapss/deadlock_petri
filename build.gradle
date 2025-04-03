@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.kolaps'
+version = '0.0.1'
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+
+    implementation 'com.github.soot-oss.SootUp:sootup:2.0.0'
+    implementation 'com.github.soot-oss.SootUp:sootup.analysis.interprocedural:2.0.0'
+    implementation 'com.github.soot-oss.SootUp:sootup.java.bytecode.frontend:2.0.0'
+    implementation 'com.github.soot-oss.SootUp:sootup.java.sourcecode.frontend:2.0.0'
+    implementation 'com.github.soot-oss.SootUp:sootup.codepropertygraph:2.0.0'
+    implementation 'com.github.soot-oss.SootUp:sootup.qilin:2.0.0'
+    implementation 'fr.lip6.pnml:fr.lip6.pnml.framework.coremodel:2.2.12'
+    implementation 'fr.lip6.pnml:fr.lip6.pnml.framework.pthlpng:2.2.12'
+    implementation 'fr.lip6.pnml:fr.lip6.pnml.framework.ptnet:2.2.12'
+    implementation 'fr.lip6.pnml:fr.lip6.pnml.framework.utils:2.2.12'
+    implementation 'fr.lip6.pnml:fr.lip6.pnml.framework.hlpn:2.2.12'
+
+    //additiononal
+    implementation 'org.eclipse.emf:org.eclipse.emf.ecore:2.10.2-v20150123-0348'
+    implementation 'org.eclipse.emf:org.eclipse.emf.common:2.10.1'
+    implementation 'com.thaiopensource:jing:20091111'
+
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.kolaps.Main'  // Ваш главный класс
+        )
+    }
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
