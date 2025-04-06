@@ -16,6 +16,15 @@ dependencies {
     implementation 'com.github.soot-oss.SootUp:sootup.java.sourcecode.frontend:2.0.0'
     implementation 'com.github.soot-oss.SootUp:sootup.codepropertygraph:2.0.0'
     implementation 'com.github.soot-oss.SootUp:sootup.qilin:2.0.0'
+    /*implementation 'com.github.soot-oss.SootUp:sootup:develop-SNAPSHOT'
+    implementation 'com.github.soot-oss.SootUp:sootup.analysis.interprocedural:develop-SNAPSHOT'
+    implementation 'com.github.soot-oss.SootUp:sootup.java.bytecode.frontend:develop-SNAPSHOT'
+    implementation 'com.github.soot-oss.SootUp:sootup.codepropertygraph:develop-SNAPSHOT'
+    implementation 'com.github.soot-oss.SootUp:sootup.core:develop-SNAPSHOT'
+    implementation 'com.github.soot-oss.SootUp:sootup.qilin:develop-SNAPSHOT'*/
+    implementation 'de.fraunhofer.iem:boomerangScope-SootUp:4.0.0'
+    implementation 'de.fraunhofer.iem:boomerangPDS:4.0.0'
+
     implementation 'fr.lip6.pnml:fr.lip6.pnml.framework.coremodel:2.2.12'
     implementation 'fr.lip6.pnml:fr.lip6.pnml.framework.pthlpng:2.2.12'
     implementation 'fr.lip6.pnml:fr.lip6.pnml.framework.ptnet:2.2.12'
@@ -28,6 +37,7 @@ dependencies {
     implementation 'com.thaiopensource:jing:20091111'
 
 }
+
 
 jar {
     manifest {
